@@ -43,7 +43,6 @@
       {
         "name": "m03",
         "file": "../../0-motions/m03.mtn",
-        "sound": "../../0-girlVoice/voice_108.mp3",
         "text": "您早啊……",
         "expression": "f02.exp.json",
         "priority": 9,
@@ -52,7 +51,6 @@
       {
         "name": "m06",
         "file": "../../0-motions/m06.mtn",
-        "sound": "../../0-girlVoice/voice_176.mp3",
         "text": "老師，非常感謝您……。 我今後也會好好加油的……",
         "expression": "f04.exp.json",
         "priority": 9,
