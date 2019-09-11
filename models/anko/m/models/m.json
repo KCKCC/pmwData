@@ -19,7 +19,7 @@
     "idle": [
       {
         "name": "m01",
-        "file": "/0-motions/m01.mtn",
+        "file": "0-motions/m01.mtn",
         "expression": "f01.exp.json",
         "priority": 9,
         "weight": 1
