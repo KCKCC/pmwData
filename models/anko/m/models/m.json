@@ -124,50 +124,6 @@
     {
       "name": "f22.exp.json",
       "file": "../../0-expressions/f22.exp.json"
-    },
-    {
-      "name": "lip_1.json",
-      "file": "../../0-expressions/lip_1.json"
-    },
-    {
-      "name": "lip_2.json",
-      "file": "../../0-expressions/lip_2.json"
-    },
-    {
-      "name": "lip_3.json",
-      "file": "../../0-expressions/lip_3.json"
-    },
-    {
-      "name": "lip_4.json",
-      "file": "../../0-expressions/lip_4.json"
-    },
-    {
-      "name": "lip_5.json",
-      "file": "../../0-expressions/lip_5.json"
-    },
-    {
-      "name": "lip_6.json",
-      "file": "../../0-expressions/lip_6.json"
-    },
-    {
-      "name": "lip_7.json",
-      "file": "../../0-expressions/lip_7.json"
-    },
-    {
-      "name": "lip_8.json",
-      "file": "../../0-expressions/lip_8.json"
-    },
-    {
-      "name": "lip_9.json",
-      "file": "../../0-expressions/lip_9.json"
-    },
-    {
-      "name": "lip_10.json",
-      "file": "../../0-expressions/lip_10.json"
-    },
-    {
-      "name": "lip_11.json",
-      "file": "../../0-expressions/lip_11.json"
     }
   ],
   "physics": "../physics.json",
