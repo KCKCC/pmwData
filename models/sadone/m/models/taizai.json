@@ -1,9 +1,9 @@
 {
-  "name": "renge",
-  "model": "../cc_02.moc",
+  "name": "sadone",
+  "model": "../taizai_01.moc",
   "textures": [
-    "../../0-face/08_face_00.png",
-    "../cc_02/texture_01.png"
+    "../../0-face/16_face_00.png",
+    "../taizai_01/texture_01.png"
   ],
   "hit_areas": [
     {
@@ -28,13 +28,20 @@
         "name": "m02",
         "file": "0-motions/m02.mtn",
         "expression": "f01.exp.json",
-        "priority": 9,
+        "priority": 5,
         "weight": 1
       },
       {
         "name": "m04",
         "file": "0-motions/m04.mtn",
         "expression": "f02.exp.json",
+        "priority": 9,
+        "weight": 1
+      },
+      {
+        "name": "m02",
+        "file": "0-motions/m02.mtn",
+        "expression": "f04.exp.json",
         "priority": 9,
         "weight": 1
       }
@@ -50,7 +57,7 @@
       {
         "name": "m06",
         "file": "0-motions/m06.mtn",
-        "expression": "f04.exp.json",
+        "expression": "f03.exp.json",
         "priority": 9,
         "weight": 1
       }
@@ -112,18 +119,6 @@
     {
       "name": "f10.exp.json",
       "file": "../../0-expressions/f10.exp.json"
-    },
-    {
-      "name": "f20.exp.json",
-      "file": "../../0-expressions/f20.exp.json"
-    },
-    {
-      "name": "f21.exp.json",
-      "file": "../../0-expressions/f21.exp.json"
-    },
-    {
-      "name": "f22.exp.json",
-      "file": "../../0-expressions/f22.exp.json"
     }
   ],
   "physics": "../physics.json",
