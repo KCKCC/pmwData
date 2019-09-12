@@ -14,6 +14,12 @@
 ;sound
 [kc_addSound name="bgm1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_comical_001.mp3"]
 [kc_addSound name="nomi_theme"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_chr_04.mp3"]
+[kc_addSound name="asu_hiee"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/asu_hiee.mp3"]
+[kc_addSound name="nozo_morai"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/nozo_morai.mp3"]
+[kc_addSound name="nozo_ooo"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/nozo_ooo.mp3"]
+[kc_addSound name="suba_uwa"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/suba_uwa.mp3"]
+[kc_addSound name="yuri_ee"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/yuri_ee.mp3"]
+[kc_addSound name="yuri_unn"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/yuri_unn.mp3"]
 
 ;pic
 [kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
@@ -29,7 +35,7 @@
 [kc_hidePic name="mumi" isBg="true"]
 [wait time=500]
 
-;hukidasi test
+
 [live2d_show name="subaru" left=-3000 top=0 time=0]
 [live2d_show name="asuha" left=-1000 top=0 time=0]
 [live2d_show name="nozomi" left=3000 top=0 time=0]
@@ -59,6 +65,8 @@
 
 [kc_hukidasi str="老師家附近的\r會員制美式大賣場" type="nar"]
 
+[kc_playSound name="yuri_unn" vol=1]
+
 [kc_hukidasi str="努唔唔。沒想到人\r會這麼多。" type="npc1"  name="yuri" paku=true x=60 ]
 [kc_hukidasi str="要是有照時間來的\r話，就不會這樣了!" type="npc1"  name="yuri" paku=true x=60 ]
 [kc_hukidasi str="都是因為望一直跑\r去看秋季特賣會。" type="npc1"  name="yuri" paku=true x=60 ]
@@ -74,15 +82,15 @@
 [kc_hukidasi str="嘻嘻~買東西就交給\r望喵吧。明日喵！" type="npc1"  name="nozomi" paku=true x=40]
 
 [live2d_expression name = "asuha" filenm="f05.exp.json" ]
-[wait time=1000]
+[wait time=600]
 
 [kc_hukidasi str="...！！" type="npc3"  name="asuha"  x=20]
 
 [live2d_expression name = "yuri" filenm="f01.exp.json" ]
-[wait time=1000]
+[wait time=600]
 
 [live2d_expression name = "asuha" filenm="f04.exp.json" ]
-[wait time=1000]
+[wait time=600]
 
 [kc_hukidasi str="拜..拜託你們了喔。\r百合_望..望喵...." type="npc1"  name="asuha" paku=true x=20]
 
@@ -112,7 +120,7 @@
 
 [live2d_expression name = "nozomi" filenm="f02.exp.json" ]
 [wait time=1000]
-
+[kc_playSound name="nozo_morai" ]
 [kc_hukidasi str="摸啦咿~" type="npc2"  name="nozomi" paku=true fontSize="4em"]
 
 [live2d_expression name = "asuha" filenm="f05.exp.json" ]
@@ -120,7 +128,12 @@
 
 [kc_hukidasi str="蹦__蹦_蹦__蹦__蹦_\r蹦蹦蹦蹦蹦蹦蹦蹦" type="nar"]
 [kc_position name="nozomi" x=-30 ]
+
+[kc_playSound name="asu_hiee" ]
+
 [kc_hukidasi str="\r噫耶噫噫噫~" type="npc1"  name="asuha" paku=true x=20]
+
+[kc_stopSound name="asu_hiee" ]
 
 [iscript]
     $("#Live2D_yuri").css('z-index',13)
@@ -151,6 +164,8 @@
 [live2d_expression name = "nozomi" filenm="f03.exp.json" ]
 [wait time=1000]
 
+[kc_playSound name="nozo_ooo" ]
+
 [kc_hukidasi str="喔~~~那邊好像有\r奇怪的商品呢!" type="npc2"  name="nozomi" paku=true x=0]
 
 [kc_position name="nozomi" x=-50 ]
@@ -158,6 +173,8 @@
 
 [live2d_expression name = "yuri" filenm="f05.exp.json" ]
 [wait time=1000]
+
+[kc_playSound name="yuri_ee" ]
 
 [kc_hukidasi str="望?!\r等一下~~~\r不能再逛了!!" type="npc2"  name="yuri" paku=true ]
 
@@ -169,6 +186,8 @@
 [live2d_expression name = "subaru" filenm="f05.exp.json" ]
 [wait time=1000]
 
+[kc_playSound name="asu_hiee" time=1]
+
 [kc_hukidasi str="啊...啊...我的腰.." type="npc1"  name="asuha" paku=true x=20]
 
 [live2d_expression name = "asuha" filenm="f10.exp.json" ]
@@ -176,6 +195,9 @@
 
 [kc_position name="asuha" x=2 y=14 r=14 ]
 [wait time=100]
+
+[kc_playSound name="suba_uwa" ]
+
 [kc_position name="subaru" x=12 ]
 
 [kc_hukidasi str="明日葉學姊，\r你沒事吧?!" type="npc2"  name="subaru" paku=true x=60]
@@ -210,3 +232,9 @@
 
 [kc_position name="subaru" x=50 ]
 [live2d_hide name = "subaru" time=1000 ]
+
+;guofunbu
+[kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]
+[wait time=1000]
+
+[kc_stopSound]

@@ -119,7 +119,7 @@
 
 [kc_hukidasi str="\r🍖🍖" type="nar" ]
 [kc_hukidasi str="\r🍖🍖🍖🍖" type="nar" txtInterval=0]
-[kc_hukidasi str="\r🍖🍖🍖🍖🍖🍖🍖🍖" type="nar" txtInterval=0]
+[kc_hukidasi str="\r🍖🍖🍖🍖🍖🍖🍖🥬" type="nar" txtInterval=0]
 [kc_hukidasi str="啊\r這邊是要直接烤的" type="npc1"  name="sadone" paku=true]
 [kc_hukidasi str="\r🍖🍖🍖🍖🍖🍖" type="nar" txtInterval=0]
 
