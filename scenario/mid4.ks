@@ -21,6 +21,8 @@
 
 [live2d_new name="kokomi"  width=1024 height=1024  left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
 [live2d_new name="urara"   width=1024 height=1024  left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
+[live2d_new name="haruka"  width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
+
 [live2d_new name="kurumi"   width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
 [live2d_new name="miki"    width=1024 height=1024  left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
 [live2d_new name="hinata"   width=1024 height=1024 left=-100 top=250 gltop=0.25  lip=true glscale=1.85 ]
@@ -31,6 +33,10 @@
 [live2d_new name="kaede"    width=1024 height=1024 left=-100 top=230 gltop=0.25  lip=true glscale=1.85 ]
 [live2d_new name="renge"    width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
 [live2d_new name="mumi"    width=1024 height=1024  left=-100 top=250 gltop=0.25  lip=true glscale=1.85 ]
+
+[live2d_new name="subaru"  width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
+[live2d_new name="anko"    width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
+[live2d_new name="asuha"   width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
 
 
 ;[live2d_show name="sakura"   ]
@@ -96,7 +102,7 @@
 [live2d_expression name = "kokomi" filenm="f05.exp.json" ]
 [live2d_motion name = "kokomi" filenm="m05.mtn" ]
 [wait time=600]
-[kc_playSound name="komi" ]
+[kc_playSound name="komi" time=0.2]
 [kc_hukidasi str="欸欸?!" type="npc1"  name="kokomi" paku=true x=0]
 [kc_hukidasi str="因為明天這邊要\r舉辦一年一度的..." type="npc1"  name="urara" paku=true x=55]
 [kc_hukidasi str="神樹峰\r里民中秋聯歡晚會\r暨...." type="npc1"  name="urara" paku=true x=55]
@@ -159,13 +165,13 @@
 [kc_hukidasi str="哦！\r舞台已經送來了嘛。" type="usr1" ]
 
 [kc_cssPic name="rengeroom" style="transform: translate(0%,0%); opacity: 1;"  isBg="true"]
-
+[wait time=300]
 [live2d_expression name = "urara" filenm="f03.exp.json" ]
 [wait time=600]
 [live2d_expression name = "kurumi" filenm="f01.exp.json" ]
 [wait time=600]
 [kc_playSound name="ura" ]
-[kc_hukidasi str="\r老師~~~" type="npc2"  name="urara" paku=true x=55]
+[kc_hukidasi str="\r老師~~~~____" type="npc2"  name="urara" paku=true x=55]
 [kc_hukidasi str="你看你看，烏拉拉\r是嫦娥喔~" type="npc1"  name="urara" paku=true x=55]
 [kc_hukidasi str="嗚哦。\r看起來好熱..." type="usr1" ]
 [kc_hukidasi str="對了，這裡有很多\r冰涼的柚子喔" type="usr1" ]
@@ -270,7 +276,7 @@
 [live2d_opacity name="kanon" opacity=1 time=1000]
 [wait time=1500]
 [kc_hukidasi str="心理上有點\r抗拒呢...." type="usr3" ]
-[kc_hukidasi str="為了不要讓大家產\r生陰影，變成柚子\r的事還是保密好了" type="usr3" ]
+[kc_hukidasi str="為了不要讓大家產\r生陰影，變成柚子\r的事還是別說好了" type="usr3" ]
 [live2d_opacity name="misaki" opacity=0 time=1000]
 [live2d_opacity name="siho"  opacity=0 time=1000]
 [live2d_opacity name="kanon" opacity=0 time=1000]
@@ -311,10 +317,42 @@
 
 [kc_hukidasi str="大家都到齊了~\r那麼~" type="npc1"  name="miki" paku=true]
 
+[live2d_show name="haruka" left=-1500 top=0 time=10]
+[live2d_show name="subaru" left=1500 top=0 time=10]
+[live2d_show name="kurumi"   left=-1000 top=0 time=10]
+[live2d_show name="asuha"  left=1000 top=0 time=10]
+
+;set to 10ms due to code above
+[iscript]
+    $("#Live2D_haruka").css('transition-duration','2000ms')
+    $("#Live2D_subaru").css('transition-duration','2000ms')
+    $("#Live2D_kurumi").css('transition-duration','2000ms')
+    $("#Live2D_asuha").css('transition-duration','2000ms')
+[endscript]
+
+[live2d_expression name = "haruka" filenm="f02.exp.json" ]
+[live2d_expression name = "subaru" filenm="f02.exp.json" ]
+[live2d_expression name = "kurumi"   filenm="f02.exp.json" ]
+[live2d_expression name = "asuha"  filenm="f02.exp.json" ]
+
+[wait time=500]
+[kc_position name="haruka" x=-17]
+[kc_position name="subaru" x=17  ]
+[kc_position name="kurumi"   x=-35 ]
+[kc_position name="asuha"  x=35 ]
+
+[wait time=1500]
+
 [live2d_expression name = "miki" filenm="f03.exp.json" ]
 [wait time=600]
 [kc_playSound name="miki_seno" ]
 [kc_hukidasi str="\r預~備~" type="npc1"  name="miki" paku=true txtInterval=300]
+
+[live2d_motion name = "miki" filenm="m05.mtn" ]
+[live2d_motion name = "haruka" filenm="m05.mtn" ]
+[live2d_motion name = "subaru" filenm="m05.mtn" ]
+[live2d_motion name = "kurumi"   filenm="m05.mtn" ]
+[live2d_motion name = "asuha"  filenm="m05.mtn" ]
 
 [kc_hukidasi str="中秋節快樂________" type="npc2" fontSize="3em"]
 
