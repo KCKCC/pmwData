@@ -1,27 +1,27 @@
 ;prepare model if not configured in data\others\live2d\Live2Dmodel.js 
 ;[kc_prepareL2D name="anko" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/anko/m/models/" modelFileName="m.json" ]
-
+;;C:/Users/KC/Desktop/R/pmwData/pwmData/
 ;[kc_prepareL2D name="anko"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/anko/m/models/" modelFileName="m.json" ]
 ;[kc_prepareL2D name="asuha"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/asuha/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="anko"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/anko/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="asuha"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/asuha/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="haruka" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/haruka/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="hinata" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/hinata/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="kaede"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/kaede/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="kanon"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/kanon/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="kokomi" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/kokomi/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="kurumi" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/kurumi/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="miki"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/miki/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="misaki" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/misaki/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="mumi"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/mumi/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="nozomi" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/nozomi/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="renge"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/renge/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="sadone" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/sadone/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="sakura" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/sakura/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="siho"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/siho/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="subaru" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/subaru/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="urara"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/urara/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="yuri"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/yuri/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="anko"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/anko/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="asuha"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/asuha/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="haruka" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/haruka/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="hinata" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/hinata/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="kaede"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/kaede/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="kanon"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/kanon/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="kokomi" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/kokomi/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="kurumi" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/kurumi/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="miki"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/miki/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="misaki" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/misaki/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="mumi"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/mumi/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="nozomi" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/nozomi/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="renge"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/renge/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="sadone" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/sadone/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="sakura" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/sakura/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="siho"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/siho/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="subaru" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/subaru/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="urara"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/urara/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="yuri"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/yuri/m/models/" modelFileName="m.json" ]
 
 
 ;load model 
@@ -54,27 +54,27 @@
 ;sound
 ;[kc_addSound name="kutar" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/kutar.mp3"]
 
-[kc_addSound name="x41"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/x41.mp3"]
-[kc_addSound name="x42"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/x42.mp3"]
-[kc_addSound name="x43"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/x43.mp3"]
-[kc_addSound name="kutar"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/kutar.mp3"]
-[kc_addSound name="bgm1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_comical_001.mp3"]
-[kc_addSound name="bgm2"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_battle_005.mp3"]
-[kc_addSound name="gege"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/gege.mp3"]
-[kc_addSound name="hiii"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/hiii.mp3"]
-[kc_addSound name="renge-ahaha"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/ahaha.mp3"]
-[kc_addSound name="mumiii"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mumi.mp3"]
-[kc_addSound name="mumidame"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mumidame.mp3"]
-[kc_addSound name="waiwai"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/waiwai.mp3"]
-[kc_addSound name="wannn"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/wannn.mp3"]
+[kc_addSound name="x41"          url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/x41.mp3"]
+[kc_addSound name="x42"          url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/x42.mp3"]
+[kc_addSound name="x43"          url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/x43.mp3"]
+[kc_addSound name="kutar"        url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/kutar.mp3"]
+[kc_addSound name="bgm1"         url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_comical_001.mp3"]
+[kc_addSound name="bgm2"         url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_battle_005.mp3"]
+[kc_addSound name="gege"         url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/gege.mp3"]
+[kc_addSound name="hiii"         url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/hiii.mp3"]
+[kc_addSound name="renge-ahaha"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/ahaha.mp3"]
+[kc_addSound name="mumiii"       url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mumi.mp3"]
+[kc_addSound name="mumidame"     url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mumidame.mp3"]
+[kc_addSound name="waiwai"       url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/waiwai.mp3"]
+[kc_addSound name="wannn"        url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/wannn.mp3"]
 
 ;pic
 ;[kc_addPic name="beach"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_beach_03_1.png"]
 
 
-[kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
-[kc_addPic name="beach"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_beach_03_1.png"]
-[kc_addPic name="rengeroom" url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_rengenroom_02.png"]
+[kc_addPic name="mumi"      url="data/others/kc/pic/mumi.png"]
+[kc_addPic name="beach"     url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_beach_03_1.png"]
+[kc_addPic name="rengeroom" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_rengenroom_02.png"]
 
 ;guofunbu
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]
@@ -193,6 +193,7 @@
 
 [kc_hukidasi str="嗯哼～❤蜜蜜躲在\r哪裡呢....？\r.........欸?!" type="npc1" x=53 name="renge" paku=true ]
 
+[wait time=600]
 [live2d_expression name = "renge" filenm="f05.exp.json" ]
 [wait time=600]
 
@@ -201,8 +202,9 @@
 [live2d_expression name = "renge" filenm="f04.exp.json" ]
 [wait time=600]
 
+[wait time=600]
 [live2d_expression name = "anko" filenm="f02.exp.json" ]
-[wait time=2000]
+[wait time=2500]
 
 
 [kc_hukidasi str="________\r蓮華，妳爬啊。___" type="npc1" x=9 name="anko" paku=true ]
@@ -223,7 +225,7 @@
 [kc_playSound name="mumidame" vol=1]
 
 [kc_hukidasi str="姆咪～～～\r蜜蜜，不行了。。\r...姆...咪.." type="npc1" x=1 y=50 name="mumi" paku=true ]
-[wait time=500]
+[wait time=700]
 
 [kc_playSound name="wannn" vol=1]
 [kc_hukidasi str="哇～～～\r日向要被壓扁了！" type="npc2" x=20 y=50 name="hinata" paku=true ]
@@ -252,15 +254,15 @@
 [kc_hukidasi str="哇～塊陶啊～\r杏子學姊要爆炸了" type="npc2" x=53 name="hinata" paku=true ]
 [live2d_opacity name="hinata" opacity=0 time=200]
 [wait time=200]
-[live2d_hide name="hinata" time=1000 ]
-[wait time=500]
+[live2d_hide name="hinata" time=500 ]
+
 
 [live2d_trans name = "mumi" left=250 top=0 time=1000 ]
 [wait time=1000]
 [kc_hukidasi str="姆咪?!\r蜜蜜也要上車！" type="npc2" x=53 name="mumi" paku=true ]
 [live2d_opacity name="mumi" opacity=0 time=200]
 [wait time=200]
-[live2d_hide name="mumi" time=1000 ]
+[live2d_hide name="mumi" time=500 ]
 
 [live2d_trans name = "renge" left=250 top=0 time=1000 ]
 [live2d_expression name = "renge" filenm="f04.exp.json" ]
@@ -295,4 +297,4 @@
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]
 [wait time=1000]
 
-[kc_stopSound name="bgm1" ]
+;[kc_stopSound name="bgm1" ]

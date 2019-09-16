@@ -302,4 +302,4 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]
 [wait time=1000]
 
-[kc_stopSound]
+;[kc_stopSound]

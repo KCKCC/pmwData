@@ -103,7 +103,7 @@
 [kc_hukidasi str="那麼就開始吧！" type="npc1"  name="nozomi" paku=true x=40]
 
 [live2d_expression name = "asuha" filenm="f02.exp.json" ]
-[wait time=1000]
+[wait time=600]
 
 [kc_position name="nozomi" x=20 ]
 [kc_hukidasi str="這個" type="npc1"  name="nozomi" paku=true x=50]
@@ -237,4 +237,4 @@
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]
 [wait time=1000]
 
-[kc_stopSound]
+;[kc_stopSound]
