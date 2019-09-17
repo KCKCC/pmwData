@@ -52,22 +52,22 @@
 
 ;preload assets
 ;sound
-[kc_addSound name="bgm"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/bgm_roulette_001.mp3"]
-[kc_addSound name="makka"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/makka.mp3"]
-[kc_addSound name="dalu"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/dalu.mp3"]
-[kc_addSound name="asu_aa"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/asu_aa.mp3"]
-[kc_addSound name="huran_haha"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/huran_haha.mp3"]
-[kc_addSound name="ituki_haha"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/ituki_haha.mp3"]
-[kc_addSound name="mari_wa"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/mari_wa.mp3"]
-[kc_addSound name="mari_ahaha"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/mari_ahaha.mp3"]
-[kc_addSound name="se_touch_001"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/se_touch_001.mp3"]
-[kc_addSound name="se_touch_001_d"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/nomi/se_touch_001.mp3"]
+[kc_addSound name="bgm"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/bgm_roulette_001.mp3"]
+[kc_addSound name="makka"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/makka.mp3"]
+[kc_addSound name="dalu"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/dalu.mp3"]
+[kc_addSound name="asu_aa"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/asu_aa.mp3"]
+[kc_addSound name="huran_haha"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/huran_haha.mp3"]
+[kc_addSound name="ituki_haha"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/ituki_haha.mp3"]
+[kc_addSound name="mari_wa"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/mari_wa.mp3"]
+[kc_addSound name="mari_ahaha"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/mari_ahaha.mp3"]
+[kc_addSound name="se_touch_001"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/se_touch_001.mp3"]
+[kc_addSound name="se_touch_001_d"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/se_touch_001.mp3"]
 
 ;pic
 [kc_addPic name="mumi"      url="data/others/kc/pic/mumi.png"]
-[kc_addPic name="rengeroom" url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_beach_03_1.png"]
-[kc_addPic name="stage"     url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_rouge.png"]
-[kc_addPic name="nusun"     url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/nusun.png"]
+[kc_addPic name="rengeroom" url="C:https://raw.githubusercontent.com/KCKCC/pmwData/pic/bg_beach_03_1.png"]
+[kc_addPic name="stage"     url="C:https://raw.githubusercontent.com/KCKCC/pmwData/pic/bg_rouge.png"]
+[kc_addPic name="nusun"     url="C:https://raw.githubusercontent.com/KCKCC/pmwData/pic/nusun.png"]
 
 ;guofunbu
 [kc_showPic name="mumi" style="transition: .5s; background-color:black;height:100%;"  isBg="true"]

@@ -1,8 +1,8 @@
 ;prepare model 
-[kc_prepareL2D name="subaru" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/subaru/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="asuha" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/asuha/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="yuri"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/yuri/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="nozomi" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/nozomi/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="subaru" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/subaru/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="asuha" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/asuha/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="yuri"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/yuri/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="nozomi" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/nozomi/m/models/" modelFileName="m.json" ]
 
 ;load model 
 [live2d_new name="subaru"   width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
@@ -12,18 +12,18 @@
 
 ;preload assets
 ;sound
-[kc_addSound name="bgm1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_comical_001.mp3"]
-[kc_addSound name="nomi_theme"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_chr_04.mp3"]
-[kc_addSound name="asu_hiee"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/asu_hiee.mp3"]
-[kc_addSound name="nozo_morai"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/nozo_morai.mp3"]
-[kc_addSound name="nozo_ooo"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/nozo_ooo.mp3"]
-[kc_addSound name="suba_uwa"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/suba_uwa.mp3"]
-[kc_addSound name="yuri_ee"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/yuri_ee.mp3"]
-[kc_addSound name="yuri_unn"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/mid3/yuri_unn.mp3"]
+[kc_addSound name="bgm1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_comical_001.mp3"]
+[kc_addSound name="nomi_theme"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_chr_04.mp3"]
+[kc_addSound name="asu_hiee"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mid3/asu_hiee.mp3"]
+[kc_addSound name="nozo_morai"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mid3/nozo_morai.mp3"]
+[kc_addSound name="nozo_ooo"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mid3/nozo_ooo.mp3"]
+[kc_addSound name="suba_uwa"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mid3/suba_uwa.mp3"]
+[kc_addSound name="yuri_ee"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mid3/yuri_ee.mp3"]
+[kc_addSound name="yuri_unn"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/mid3/yuri_unn.mp3"]
 
 ;pic
 [kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
-[kc_addPic name="rengeroom" url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_shoppingmall_01.png"]
+[kc_addPic name="rengeroom" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_shoppingmall_01.png"]
 
 ;guofunbu
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]

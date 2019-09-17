@@ -1,11 +1,11 @@
 ;prepare model 
-[kc_prepareL2D name="haruka" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/haruka/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="sadone" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/sadone/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="miki"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/miki/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="misaki" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/misaki/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="sadone-taizai" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/sadone/m/models/" modelFileName="taizai.json" ]
-[kc_prepareL2D name="siho" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/siho/m/models/" modelFileName="m.json" ]
-[kc_prepareL2D name="kanon" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/kanon/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="haruka" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/haruka/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="sadone" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/sadone/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="miki"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/miki/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="misaki" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/misaki/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="sadone-taizai" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/sadone/m/models/" modelFileName="taizai.json" ]
+[kc_prepareL2D name="siho" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/siho/m/models/" modelFileName="m.json" ]
+[kc_prepareL2D name="kanon" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/kanon/m/models/" modelFileName="m.json" ]
 
 
 ;load model 
@@ -20,17 +20,17 @@
 
 ;preload assets
 ;sound
-[kc_addSound name="bgm1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_comical_001.mp3"]
-[kc_addSound name="bgm2"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_battle_005.mp3"]
-[kc_addSound name="sado_hehe"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sado_hehe.mp3"]
-[kc_addSound name="sado_oni"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sado_oni.mp3"]
-[kc_addSound name="sado_theme"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_chr_16b.mp3"]
-[kc_addSound name="miki_theme"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_chr_01.mp3"]
+[kc_addSound name="bgm1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_comical_001.mp3"]
+[kc_addSound name="bgm2"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_battle_005.mp3"]
+[kc_addSound name="sado_hehe"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sado_hehe.mp3"]
+[kc_addSound name="sado_oni"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sado_oni.mp3"]
+[kc_addSound name="sado_theme"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_chr_16b.mp3"]
+[kc_addSound name="miki_theme"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_chr_01.mp3"]
 
 ;pic
 [kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
-[kc_addPic name="beach"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_beach_03_1.png"]
-[kc_addPic name="rengeroom" url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_kitchen_kaede_01.png"]
+[kc_addPic name="beach"    url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_beach_03_1.png"]
+[kc_addPic name="rengeroom" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_kitchen_kaede_01.png"]
 
 ;guofunbu
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:black;height:100%;"  isBg="true"]
