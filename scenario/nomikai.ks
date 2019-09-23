@@ -1,13 +1,13 @@
 
-[kc_prepareL2D name="botan"   url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\botan\" modelFileName="m.json" ]
-[kc_prepareL2D name="kiku"    url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\kiku\" modelFileName="m.json" ]
-[kc_prepareL2D name="asuchu1" url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\asuchu\op_02\" modelFileName="m.json" ]
-[kc_prepareL2D name="asuchu2" url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\asuchu\swm_02\" modelFileName="m.json" ]
-[kc_prepareL2D name="asuchu3" url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\asuchu\yuka_01\" modelFileName="m.json" ]
-[kc_prepareL2D name="mari"    url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\mari\yuka_01\" modelFileName="m.json" ]
-[kc_prepareL2D name="ituki"   url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\ituki\swm_10\" modelFileName="m.json" ]
-[kc_prepareL2D name="huran1"  url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\huran\u_09\" modelFileName="m.json" ]
-[kc_prepareL2D name="huran2"  url="C:\Users\KC\Desktop\R\pmwData\pwmData\models\huran\usagi_01\" modelFileName="m.json" ]
+[kc_prepareL2D name="botan"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\botan\" modelFileName="m.json" ]
+[kc_prepareL2D name="kiku"    url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\kiku\" modelFileName="m.json" ]
+[kc_prepareL2D name="asuchu1" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\asuchu\op_02\" modelFileName="m.json" ]
+[kc_prepareL2D name="asuchu2" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\asuchu\swm_02\" modelFileName="m.json" ]
+[kc_prepareL2D name="asuchu3" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\asuchu\yuka_01\" modelFileName="m.json" ]
+[kc_prepareL2D name="mari"    url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\mari\yuka_01\" modelFileName="m.json" ]
+[kc_prepareL2D name="ituki"   url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\ituki\swm_10\" modelFileName="m.json" ]
+[kc_prepareL2D name="huran1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\huran\u_09\" modelFileName="m.json" ]
+[kc_prepareL2D name="huran2"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models\huran\usagi_01\" modelFileName="m.json" ]
 
 [live2d_new name="botan"   width=1024 height=1024 left=-100 top=220 gltop=0.25  lip=true glscale=1.85 ]
 [live2d_new name="kiku"    width=1024 height=1024 left=-100 top=220 gltop=0.25  lip=true glscale=1.85 ]
@@ -52,22 +52,22 @@
 
 ;preload assets
 ;sound
-[kc_addSound name="bgm"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/bgm_roulette_001.mp3"]
-[kc_addSound name="makka"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/makka.mp3"]
-[kc_addSound name="dalu"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/dalu.mp3"]
-[kc_addSound name="asu_aa"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/asu_aa.mp3"]
-[kc_addSound name="huran_haha"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/huran_haha.mp3"]
-[kc_addSound name="ituki_haha"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/ituki_haha.mp3"]
-[kc_addSound name="mari_wa"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/mari_wa.mp3"]
-[kc_addSound name="mari_ahaha"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/mari_ahaha.mp3"]
-[kc_addSound name="se_touch_001"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/se_touch_001.mp3"]
-[kc_addSound name="se_touch_001_d"  url="C:https://raw.githubusercontent.com/KCKCC/pmwData/sound/nomi/se_touch_001.mp3"]
+[kc_addSound name="bgm"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/bgm_roulette_001.mp3"]
+[kc_addSound name="makka"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/makka.mp3"]
+[kc_addSound name="dalu"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/dalu.mp3"]
+[kc_addSound name="asu_aa"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/asu_aa.mp3"]
+[kc_addSound name="huran_haha"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/huran_haha.mp3"]
+[kc_addSound name="ituki_haha"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/ituki_haha.mp3"]
+[kc_addSound name="mari_wa"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/mari_wa.mp3"]
+[kc_addSound name="mari_ahaha"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/mari_ahaha.mp3"]
+[kc_addSound name="se_touch_001"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/se_touch_001.mp3"]
+[kc_addSound name="se_touch_001_d"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/nomi/se_touch_001.mp3"]
 
 ;pic
 [kc_addPic name="mumi"      url="data/others/kc/pic/mumi.png"]
-[kc_addPic name="rengeroom" url="C:https://raw.githubusercontent.com/KCKCC/pmwData/pic/bg_beach_03_1.png"]
-[kc_addPic name="stage"     url="C:https://raw.githubusercontent.com/KCKCC/pmwData/pic/bg_rouge.png"]
-[kc_addPic name="nusun"     url="C:https://raw.githubusercontent.com/KCKCC/pmwData/pic/nusun.png"]
+[kc_addPic name="rengeroom" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_beach_03_1.png"]
+[kc_addPic name="stage"     url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_rouge.png"]
+[kc_addPic name="nusun"     url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/nusun.png"]
 
 ;guofunbu
 [kc_showPic name="mumi" style="transition: .5s; background-color:black;height:100%;"  isBg="true"]
