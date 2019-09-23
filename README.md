@@ -37,3 +37,10 @@ nomikai:
   
 original project  
 https://tyrano.jp/sample/show/2  
+
+
+PS:
+you can create a short cut of chrome with path like :   
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security  --user-data-dir=C:/chromeTemp --allow-file-access-from-files  
+and use this to open perfectmumiworld to get the ability to load local resources like:  
+C:/XXX/xxx/mumi/whatever
