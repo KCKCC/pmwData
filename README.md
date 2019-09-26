@@ -34,6 +34,9 @@ mid4:
 nomikai:  
 -multi paku test  
 -lip sync  
+
+harukadan:  
+-phone cam background
   
 original project  
 https://tyrano.jp/sample/show/2  
