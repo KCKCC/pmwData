@@ -9,13 +9,13 @@
 
 
 ;load model 
-[live2d_new name="haruka"   width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
-[live2d_new name="misaki"  width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
-[live2d_new name="siho"  width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
-[live2d_new name="kanon"  width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
-[live2d_new name="sadone-taizai"    width=1024 height=1024 left=-100 top=250 gltop=0.25  lip=true glscale=1.85 ]
-[live2d_new name="sadone"    width=1024 height=1024 left=-100 top=250 gltop=0.25  lip=true glscale=1.85 ]
-[live2d_new name="miki"    width=1024 height=1024 left=-100 top=200 gltop=0.25  lip=true glscale=1.85 ]
+[live2d_new name="haruka"           width=1024 height=1024 left=75% top=55% gltop=0 lip=true glscale=1.85 ]
+[live2d_new name="misaki"           width=1024 height=1024 left=25% top=55% gltop=0 lip=true glscale=1.85 ]
+[live2d_new name="siho"             width=1024 height=1024 left=60% top=55% gltop=0 lip=true glscale=1.85 ]
+[live2d_new name="kanon"            width=1024 height=1024 left=80% top=55% gltop=0 lip=true glscale=1.85 ]
+[live2d_new name="sadone-taizai"    width=1024 height=1024 left=61% top=150% gltop=0 lip=true glscale=1.85 ]
+[live2d_new name="sadone"           width=1024 height=1024 left=50% top=63% gltop=0 lip=true glscale=1.85 ]
+[live2d_new name="miki"             width=1024 height=1024 left=150% top=55% gltop=0 lip=true glscale=1.85 ]
 
 
 ;preload assets
@@ -66,19 +66,19 @@
 ;[live2d_show name="sadone" left=0 top=0 time=1000]
 ;[live2d_show name="sadone-taizai" left=300 top=0 time=1000]
 
-[live2d_show name="sadone" left=0 top=0 time=1000]
-[live2d_show name="haruka" left=250 top=0 time=1000]
-[live2d_show name="misaki" left=-250 top=0 time=1000]
+[live2d_show name="sadone" time=1000]
+[live2d_show name="haruka" time=1000]
+[live2d_show name="misaki" time=1000]
 
 
 [kc_hukidasi str="\r____老師的廚房_" type="nar" ]
-[kc_hukidasi str="好期待呢。又可以\r吃到莎朵霓的肉了～" type="npc1" name="haruka" paku=true x=55 ]
-[kc_hukidasi str="這次也是幹勁滿滿\r的呢。" type="npc1"  name="haruka" paku=true x=55 ]
+[kc_hukidasi str="好期待呢。又可以\r吃到莎朵霓的肉了～" type="npc1" name="haruka" paku=true  ]
+[kc_hukidasi str="這次也是幹勁滿滿\r的呢。" type="npc1"  name="haruka" paku=true  ]
 
 [live2d_expression name = "misaki" filenm="f08.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="美紀看起來也很\r興奮，真是令人\r擔心....." type="npc3"  name="misaki" x=0 ]
+[kc_hukidasi str="美紀看起來也很\r興奮，真是令人\r擔心....." type="npc3"  name="misaki"  ]
 
 [live2d_expression name = "sadone" filenm="f03.exp.json" ]
 [wait time=1000]
@@ -96,21 +96,21 @@
 [live2d_expression name = "haruka" filenm="f03.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="\r哇啊~~~~這麼大嗎" type="npc1"  name="haruka" paku=true x=55 ]
+[kc_hukidasi str="\r哇啊~~~~這麼大嗎" type="npc1"  name="haruka" paku=true  ]
 
-[live2d_show name="miki" left=1000 top=0 time=0]
+[live2d_show name="miki" time=0]
 [live2d_opacity name="miki" opacity=0 time=0]
-[kc_position name="miki" x=45 y=22 r=-22]
+[kc_position name="miki" x=90 y=80 r=-22]
 [live2d_opacity name="miki" opacity=1 time=1000]
 
-[kc_hukidasi str="我要做的是醃\r蝦子喔~" type="npc1"  name="miki" paku=true x=60]
+[kc_hukidasi str="我要做的是醃\r蝦子喔~" type="npc1"  name="miki" x=75 y=90 paku=true]
 
 ;[live2d_opacity name="miki" opacity=0 time=1000]
 
 [live2d_expression name = "misaki" filenm="f16.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="嗚嗯! ！\r馬上就出現\r蝦子了!!" type="npc3"  name="misaki" x=0 ]
+[kc_hukidasi str="嗚嗯! ！\r馬上就出現\r蝦子了!!" type="npc3"  name="misaki"  ]
 [kc_hukidasi str="那，莎朵霓這次\r也會加油的!" type="npc1"  name="sadone" paku=true]
 [kc_hukidasi str="那麼先把肉肉\r拿出來吧！" type="npc1"  name="sadone" paku=true]
 
@@ -128,7 +128,7 @@
 [live2d_expression name = "misaki" filenm="f05.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="\r那個是....手指虎?" type="npc3"  name="misaki"  x=0]
+[kc_hukidasi str="\r那個是....手指虎?" type="npc3"  name="misaki"  ]
 
 [live2d_expression name = "sadone" filenm="f08.exp.json" ]
 [wait time=1000]
@@ -139,11 +139,11 @@
 $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')+"-webkit-mask-image: -webkit-gradient(linear, left top,left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));")
 [endscript]
 
-[live2d_show name="sadone-taizai" left=100 top=1000 time=1000]
+[live2d_show name="sadone-taizai" time=1000]
 [live2d_opacity name="sadone-taizai" opacity=0 time=0]
-[kc_position name="sadone-taizai" x=0 y=0 r=0]
+[kc_position name="sadone-taizai" x=50 y=90 r=0]
 [live2d_opacity name="sadone-taizai" opacity=1 time=1000]
-[kc_position name="sadone-taizai" x=11 y=-29 r=0]
+[kc_position name="sadone-taizai" x=61 y=40 r=0]
 
 [live2d_motion name = "sadone" filenm="m05.mtn"]
 
@@ -161,12 +161,12 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 
 [kc_hukidasi str="歐逆醬" type="npc2"  name="sadone" paku=true fontSize="4em"]
 
-[kc_hukidasi str="\r好驚人的鬥氣!" type="npc2"  name="haruka" paku=true x=55 ]
+[kc_hukidasi str="\r好驚人的鬥氣!" type="npc2"  name="haruka" paku=true  ]
 
 [live2d_expression name = "misaki" filenm="f05.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="肉竟然.....融合了!!" type="npc2"  name="misaki" paku=true x=0 ]
+[kc_hukidasi str="肉竟然.....融合了!!" type="npc2"  name="misaki" paku=true  ]
 
 [live2d_expression name = "haruka" filenm="f02.exp.json" ]
 [wait time=1000]
@@ -174,7 +174,7 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 [live2d_expression name = "miki" filenm="f03.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="莎朵霓好厲害!!" type="npc1"  name="miki" paku=true x=60]
+[kc_hukidasi str="莎朵霓好厲害!!" type="npc1"  name="miki" x=80 y=90 paku=true]
 
 [live2d_expression name = "sadone" filenm="f04.exp.json" ]
 [wait time=1000]
@@ -183,7 +183,7 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 [kc_hukidasi str="是莎朵霓跟主廚\r一起想出來的唷～" type="npc1"  name="sadone" paku=true]
 
 [live2d_hide name = "sadone-taizai" time=1000 ]
-
+[kc_hukidasi str="那莎朵霓做完了\r要去洗手手" type="npc1"  name="sadone" paku=true]
 [live2d_hide name = "sadone" time=1000 ]
 
 [kc_stopSound]
@@ -191,14 +191,14 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 
 
 ;[live2d_opacity name="miki" opacity=1 time=1000]
-[kc_position name="miki" x=0 y=0 r=0]
+[kc_position name="miki" x=50 y=55 r=0]
 
 [kc_hukidasi str="接下來是我的\r醃蝦子喔!" type="npc1"  name="miki" paku=true]
 
 [live2d_expression name = "misaki" filenm="f07.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="唔!_來了!" type="npc3"  name="misaki" x=0 ]
+[kc_hukidasi str="唔!_來了!" type="npc3"  name="misaki"  ]
 
 [live2d_expression name = "miki" filenm="f02.exp.json" ]
 [wait time=1000]
@@ -214,32 +214,32 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 [live2d_expression name = "haruka" filenm="f04.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="哇~~看起來好好吃" type="npc1"  name="haruka" paku=true x=55 ]
+[kc_hukidasi str="哇~~看起來好好吃" type="npc1"  name="haruka" paku=true  ]
 
 [live2d_expression name = "misaki" filenm="f16.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="還是生的吧!!\r只有灑鹽而已喔!!" type="npc3"  name="misaki"  x=0]
+[kc_hukidasi str="還是生的吧!!\r只有灑鹽而已喔!!" type="npc3"  name="misaki"  ]
 [kc_hukidasi str="然後裝到袋子裡~" type="npc1"  name="miki" paku=true]
 [kc_hukidasi str="完成!\r這樣烤的時候就會\r很~好吃喔!" type="npc1"  name="miki" paku=true]
 
 [live2d_expression name = "misaki" filenm="f05.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="嗯?!\r這樣就結束了?!" type="npc2"  name="misaki" paku=true x=0 ]
+[kc_hukidasi str="嗯?!\r這樣就結束了?!" type="npc2"  name="misaki" paku=true  ]
 [kc_hukidasi str="因為是烤蝦子嘛~" type="npc1"  name="miki" paku=true]
-[kc_hukidasi str="嗯...?\r說的也是呢...?" type="npc1"  name="misaki" paku=true x=0 ]
+[kc_hukidasi str="嗯...?\r說的也是呢...?" type="npc1"  name="misaki" paku=true  ]
 
 [live2d_expression name = "haruka" filenm="f06.exp.json" ]
-[wait time=1000]
+[wait time=500]
 
 [live2d_expression name = "misaki" filenm="f02.exp.json" ]
-[wait time=1000]
+[wait time=500]
 
-[kc_hukidasi str="說起來老師到底去\r哪裡了呢?" type="npc1"  name="haruka" paku=true x=55 ]
-[kc_hukidasi str="時間都快到了呢" type="npc1"  name="misaki" paku=true x=0 ]
-[kc_hukidasi str="美紀，你們先把材\r料帶去吧。" type="npc1"  name="misaki" paku=true x=0 ]
-[kc_hukidasi str="我留下來等老師跟\rf*f的兩位。" type="npc1" name="misaki" paku=true x=0]
+[kc_hukidasi str="說起來老師到底去\r哪裡了呢?" type="npc1"  name="haruka" paku=true  ]
+[kc_hukidasi str="時間都快到了呢" type="npc1"  name="misaki" paku=true  ]
+[kc_hukidasi str="美紀，你們先把材\r料帶去吧。" type="npc1"  name="misaki" paku=true  ]
+[kc_hukidasi str="我留下來等老師跟\rf*f的兩位。" type="npc1" name="misaki" paku=true ]
 
 [live2d_expression name = "haruka" filenm="f02.exp.json" ]
 [wait time=1000]
@@ -247,20 +247,21 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 [live2d_expression name = "miki" filenm="f01.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="\r那我們先走摟~" type="npc1"  name="haruka" paku=true x=55 ]
+[kc_hukidasi str="\r嗨~" type="npc1"  name="miki" paku=true  ]
+[kc_hukidasi str="\r那我們先走摟~" type="npc1"  name="haruka" paku=true  ]
 
 [live2d_hide name = "miki" time=1000 ]
 [live2d_hide name = "haruka" time=1000 ]
 
 [kc_hukidasi str="3分鐘後" type="nar" ]
 
-[live2d_show name="kanon" left=100 top=0 time=1000]
-[live2d_show name="siho" left=300 top=0 time=1000]
+[live2d_show name="kanon" time=1000]
+[live2d_show name="siho" time=1000]
 
 [kc_hukidasi str="哈摟~我們來摟" type="npc1" name="kanon" paku=true]
-[kc_hukidasi str="喔，美紀他們已經\r先出發了。" type="npc1"  name="misaki" paku=true x=0]
-[kc_hukidasi str="話說回來我們在玄\r關撿到一顆柚子呢" type="npc1"  name="siho" paku=true x=60]
-[kc_hukidasi str="放在這個箱子裡吧\r老師家裡的柚子到\r處亂放呢..." type="npc1"  name="misaki" paku=true x=0]
+[kc_hukidasi str="喔，美紀他們已經\r先出發了。" type="npc1"  name="misaki" paku=true ]
+[kc_hukidasi str="話說回來我們在玄\r關撿到一顆柚子呢" type="npc1"  name="siho" paku=true]
+[kc_hukidasi str="放在這個箱子裡吧\r老師家裡的柚子到\r處亂放呢..." type="npc1"  name="misaki" paku=true ]
 [kc_hukidasi str="\r放...." type="nar" ]
 [kc_hukidasi str="\r碰~" type="nar" ]
 
@@ -275,13 +276,13 @@ $("#Live2D_sadone-taizai").attr('style',$("#Live2D_sadone-taizai").attr('style')
 [live2d_expression name = "siho" filenm="f08.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="啊啦~老師這次\r變成柚子了嗎?\r真是應景呢~" type="npc1"  name="siho" paku=true x=60]
+[kc_hukidasi str="啊啦~老師這次\r變成柚子了嗎?\r真是應景呢~" type="npc1"  name="siho" paku=true]
 [kc_hukidasi str="咦....?\r原來我不是一顆\r柚子嗎...?" type="usr1" ]
 
 [live2d_expression name = "misaki" filenm="f08.exp.json" ]
 [wait time=1000]
 
-[kc_hukidasi str="...已經不會覺得\r驚訝了呢。既然到了\r那就快走吧。" type="npc1"  name="misaki" paku=true x=0]
+[kc_hukidasi str="...已經不會覺得\r驚訝了呢。既然到了那就快走吧。" type="npc1"  name="misaki" paku=true ]
 
 [live2d_expression name = "kanon" filenm="f08.exp.json" ]
 [wait time=1000]
