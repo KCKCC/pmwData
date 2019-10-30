@@ -1,0 +1,232 @@
+{
+    "type": "Live2D Expression",
+    "fade_in": 500,
+    "fade_out": 500,
+    "params": [
+        {
+            "id": "PARAM_EYE_FORM",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_MOUTH_FORM",
+            "type": 0,
+            "val": "2"
+        },
+        {
+            "id": "PARAM_ANGLE_Y",
+            "type": 0,
+            "val": "10.2"
+        },
+        {
+            "id": "PARAM_ANGLE_X",
+            "type": 0,
+            "val": "14.4"
+        },
+        {
+            "id": "PARAM_ANGLE_Z",
+            "type": 0,
+            "val": "30"
+        },
+        {
+            "id": "PARAM_BODY_ANGLE_Y",
+            "type": 0,
+            "val": "10"
+        },
+        {
+            "id": "PARAM_BODY_ANGLE_Z",
+            "type": 0,
+            "val": "10"
+        },
+        {
+            "id": "PARAM_BODY_ANGLE_X",
+            "type": 0,
+            "val": "-10"
+        },
+        {
+            "id": "PARAM_ROTATION_Z",
+            "type": 0,
+            "val": "1"
+        },
+        {
+            "id": "PARAM_EYE_BALL_X",
+            "type": 0,
+            "val": "1"
+        },
+        {
+            "id": "PARAM_EYE_BALL_Y",
+            "type": 0,
+            "val": "-1"
+        },
+        {
+            "id": "PARAM_POSITION_Y",
+            "type": 0,
+            "val": "0.04"
+        },
+        {
+            "id": "PARAM_HAIR_FRONT",
+            "type": 0,
+            "val": "-0.04"
+        },
+        {
+            "id": "PARAM_EYE_L_OPEN",
+            "type": 0,
+            "val": "1.10000002384186"
+        },
+        {
+            "id": "PARAM_EYE_L_SMILE",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_EYE_R_OPEN",
+            "type": 0,
+            "val": "1.10000002384186"
+        },
+        {
+            "id": "PARAM_EYE_R_SMILE",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_EYE_BALL_FORM",
+            "type": 0,
+            "val": "-1"
+        },
+        {
+            "id": "PARAM_EYE_BALL_KIRAKIRA",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_BROW_L_Y",
+            "type": 0,
+            "val": "0.28"
+        },
+        {
+            "id": "PARAM_BROW_R_Y",
+            "type": 0,
+            "val": "0.04"
+        },
+        {
+            "id": "PARAM_BROW_L_X",
+            "type": 0,
+            "val": "0.28"
+        },
+        {
+            "id": "PARAM_BROW_R_X",
+            "type": 0,
+            "val": "0.14"
+        },
+        {
+            "id": "PARAM_BROW_L_ANGLE",
+            "type": 0,
+            "val": "0.64"
+        },
+        {
+            "id": "PARAM_BROW_R_ANGLE",
+            "type": 0,
+            "val": "0.72"
+        },
+        {
+            "id": "PARAM_BROW_L_FORM",
+            "type": 0,
+            "val": "-2"
+        },
+        {
+            "id": "PARAM_BROW_R_FORM",
+            "type": 0,
+            "val": "-2"
+        },
+        {
+            "id": "PARAM_BROW_EXT",
+            "type": 0,
+            "val": "0.1"
+        },
+        {
+            "id": "PARAM_MOUTH_OPEN_Y",
+            "type": 0,
+            "val": "0.6"
+        },
+        {
+            "id": "PARAM_MOUTH_PLUMP",
+            "type": 0,
+            "val": "0.1"
+        },
+        {
+            "id": "PARAM_CHEEK",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_SWEAT",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_TEAR",
+            "type": 0,
+            "val": 0.0001
+        },
+        {
+            "id": "PARAM_ARM_L_A",
+            "type": 0,
+            "val": "-20"
+        },
+        {
+            "id": "PARAM_ARM_R_A",
+            "type": 0,
+            "val": "10"
+        },
+        {
+            "id": "PARAM_UPPER_BODY",
+            "type": 0,
+            "val": "0.3"
+        },
+        {
+            "id": "PARAM_BREATH",
+            "type": 0,
+            "val": "0.72"
+        },
+        {
+            "id": "PARAM_HAIR_SIDE",
+            "type": 0,
+            "val": "-0.52"
+        },
+        {
+            "id": "PARAM_HAIR_BACK",
+            "type": 0,
+            "val": "0.38"
+        },
+        {
+            "id": "PARAM_BUST_Y",
+            "type": 0,
+            "val": "0.02"
+        },
+        {
+            "id": "PARAM_CLOTHES_A",
+            "type": 0,
+            "val": "-1"
+        },
+        {
+            "id": "PARAM_CLOTHES_B",
+            "type": 0,
+            "val": "1"
+        },
+        {
+            "id": "PARAM_MOUTH_SCALE",
+            "type": 0,
+            "val": "1"
+        },
+        {
+            "id": "PARAM_POSITION_X",
+            "type": 0,
+            "val": "0.02"
+        },
+        {
+            "id": "PARAM_SCALE",
+            "type": 0,
+            "val": "0.04"
+        }
+    ]
+}

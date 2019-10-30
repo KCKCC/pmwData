@@ -1,9 +1,10 @@
 [kc_loadAllExp ]
 ;prepare model 
 ;https://raw.githubusercontent.com/KCKCC/pmwData/master/
-[kc_prepareL2D name="mumi" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/mumi/choco_02/" modelFileName="m.json" ]
-[kc_prepareL2D name="dmumi" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/mumi/twdark_01/" modelFileName="m.json" ]
-[kc_prepareL2D name="renge" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models/renge/m/models/" modelFileName="m.json" ]
+;C:/Users/KC/Desktop/R/pmwData/pwmData/
+[kc_prepareL2D name="mumi" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/mumi/choco_02/" modelFileName="m.json" ]
+[kc_prepareL2D name="dmumi" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/mumi/twdark_01/" modelFileName="m.json" ]
+[kc_prepareL2D name="renge" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/models/renge/m/models/" modelFileName="m.json" ]
 
 ;load model 
 [live2d_new name="renge"   width=1024 height=1024 left=66% top=55% gltop=0  lip=true glscale=1.85 ]
@@ -13,13 +14,13 @@
 
 ;preload assets
 ;sound
-[kc_addSound name="bgm1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_chr_101.mp3"]
-[kc_addSound name="bgm2"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/bgm_pressure_001.mp3"]
+[kc_addSound name="bgm1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_chr_101.mp3"]
+[kc_addSound name="bgm2"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/bgm_pressure_001.mp3"]
 
 ;pic
 [kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
-[kc_addPic name="jyu" url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_jyutaku_02.png"]
-[kc_addPic name="naka" url="C:/Users/KC/Desktop/R/pmwData/pwmData/pic/bg_nakaniwa2_01.png"]
+[kc_addPic name="jyu" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_jyutaku_02.png"]
+[kc_addPic name="naka" url="https://raw.githubusercontent.com/KCKCC/pmwData/master/pic/bg_nakaniwa2_01.png"]
 
 ;---------------------------------------
 
@@ -37,7 +38,6 @@
 [kc_hukidasi str="\r_____ハロウィンすごし前" type="nar" fat=1]
 
 [live2d_show name="mumi" time=1000]
-
 [kc_exp name="mumi" expName="haka_f02" ]
 
 [kc_hukidasi str="むみみ～\rもうすぐはろうぃん～むみぃ～\rおっかしいっぱいもらうの～" type="npc1"  name="mumi" paku=true ]
@@ -87,9 +87,6 @@
 [live2d_hide name = "mumi" time=1000 ]
 
 [kc_hukidasi str="\r厶ボンーーー！！"  type="nar" ]
-
-
-
 
 [live2d_show name="dmumi" time=1000]
 [kc_exp name="dmumi" expName="mumi_f03" ]
