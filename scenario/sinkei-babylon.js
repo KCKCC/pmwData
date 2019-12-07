@@ -1,7 +1,7 @@
 [iscript]
 // var babylonPath = "C:/Users/KC/Desktop/babylon";
-// var babylonPath = "https://raw.githubusercontent.com/KCKCC/pmwData/master/babylon";
-var babylonPath = "./babylon";
+var babylonPath = "https://raw.githubusercontent.com/KCKCC/pmwData/master/babylon";
+// var babylonPath = "./babylon";
 kc.babylon = {};
 kc.appendExtraJS = (url) => {
     var s = document.createElement("script");
@@ -199,7 +199,7 @@ kc.fitBabylon = () => {
     var canvas = document.getElementById("renderCanvas");
 
     //god why i have to do this mumi><
-    var firstStageRatio = (localStorage.getItem('kcw') == null ? 842 : localStorage.getItem('kcw') / $.getViewPort().width);
+    var firstStageRatio = (localStorage.getItem('kcw') == null ? 842 : localStorage.getItem('kcw')) / $.getViewPort().width;
 
 
     canvas.style.width = (scaleX * firstStageRatio * 100) + "%"; //842
