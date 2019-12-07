@@ -20,28 +20,24 @@
       {
         "name": "m01",
         "file": "0-motions/m01.mtn",
-        "expression": "f01.exp.json",
         "priority": 9,
         "weight": 1
       },
       {
         "name": "m02",
         "file": "0-motions/m02.mtn",
-        "expression": "f01.exp.json",
         "priority": 5,
         "weight": 1
       },
       {
         "name": "m04",
         "file": "0-motions/m04.mtn",
-        "expression": "f02.exp.json",
         "priority": 9,
         "weight": 1
       },
       {
         "name": "m02",
         "file": "0-motions/m02.mtn",
-        "expression": "f04.exp.json",
         "priority": 9,
         "weight": 1
       }
@@ -50,14 +46,12 @@
       {
         "name": "m03",
         "file": "0-motions/m03.mtn",
-        "expression": "f02.exp.json",
         "priority": 9,
         "weight": 1
       },
       {
         "name": "m06",
         "file": "0-motions/m06.mtn",
-        "expression": "f03.exp.json",
         "priority": 9,
         "weight": 1
       }
@@ -66,14 +60,12 @@
       {
         "name": "m05",
         "file": "0-motions/m05.mtn",
-        "expression": "f03.exp.json",
         "priority": 9,
         "weight": 1
       },
       {
         "name": "m03",
         "file": "0-motions/m03.mtn",
-        "expression": "f04.exp.json",
         "priority": 9,
         "weight": 1
       }
@@ -82,7 +74,7 @@
   "expressions": [
     {
       "name": "f01.exp.json",
-      "file": "expressions/f01.exp.json"
+      "file": "expressions/F01.exp.json"
     }
   ],
   "physics": "physics.json",
