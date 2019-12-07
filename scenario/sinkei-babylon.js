@@ -7,21 +7,24 @@ kc.appendExtraJS = (url) => {
     s.src = url;
     $("head").append(s);
 }
-kc.appendExtraJS("https://code.jquery.com/pep/0.4.2/pep.min.js");
-kc.appendExtraJS("https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/ammo.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/cannon.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/Oimo.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/gltf_validator.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/earcut.min.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/babylon.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/loaders/babylonjs.loaders.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js");
-kc.appendExtraJS("https://cdn.babylonjs.com/gui/babylon.gui.min.js");
+////kc.appendExtraJS("https://code.jquery.com/pep/0.4.2/pep.min.js");
+//kc.appendExtraJS("https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js");
+////kc.appendExtraJS("https://cdn.babylonjs.com/ammo.js");
+////kc.appendExtraJS("https://cdn.babylonjs.com/cannon.js");
+////kc.appendExtraJS("https://cdn.babylonjs.com/Oimo.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/gltf_validator.js");
+////kc.appendExtraJS("https://cdn.babylonjs.com/earcut.min.js");
+//gitlab seems not like appendJS
+//https://cdn.babylonjs.com/babylon.js
+//kc.appendExtraJS(babylonPath + "/babylon.js");
+
+//kc.appendExtraJS("https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/loaders/babylonjs.loaders.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js");
+//kc.appendExtraJS("https://cdn.babylonjs.com/gui/babylon.gui.min.js");
 
 var canvas = document.createElement("canvas");
 canvas.id = "renderCanvas";
@@ -314,9 +317,9 @@ kc.charAction = () => {
 // window.addEventListener("resize", () => kc.fitBabylon());
 $(window).resize(() => setTimeout(() => kc.fitBabylon(), 100));
 
-kc.winEvents = [{ name: 'win1', weight: 1 }, { name: 'win2', weight: 1 }, { name: 'win3', weight: 1 }];
-kc.loseEvents = [{ name: 'lose1', weight: 1 }, { name: 'lose2', weight: 1 }, { name: 'lose3', weight: 1 }];
-kc.drawEvents = [{ name: 'draw1', weight: 1 }, { name: 'draw2', weight: 1 }, { name: 'draw3', weight: 1 }];
+// kc.winEvents = [{ name: 'win1', weight: 1 }, { name: 'win2', weight: 1 }, { name: 'win3', weight: 1 }];
+// kc.loseEvents = [{ name: 'lose1', weight: 1 }, { name: 'lose2', weight: 1 }, { name: 'lose3', weight: 1 }];
+// kc.drawEvents = [{ name: 'draw1', weight: 1 }, { name: 'draw2', weight: 1 }, { name: 'draw3', weight: 1 }];
 kc.fireEvent = (events) => {
     if (!events)
         return;
