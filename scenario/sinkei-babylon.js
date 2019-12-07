@@ -1,5 +1,5 @@
 [iscript]
-var babylonPath = "C:/Users/KC/Desktop/babylon";
+var babylonPath = "https://raw.githubusercontent.com/KCKCC/pmwData/master/babylon";
 kc.babylon = {};
 kc.appendExtraJS = (url) => {
     var s = document.createElement("script");
@@ -32,6 +32,12 @@ kc.babylon.scene = null;
 kc.babylon.chars = ["anko", "aoi", "asuchu", "asuha", "avna", "haruka", "hinata", "huuran", "ituki", "kaede", "kanon", "kokomi", "kurumi", "mari", "miki", "misaki", "mumi", "nozomi", "renge", "sadone", "sakura", "siho", "subaru", "urara", "yuri"];
 kc.babylon.selectedCards = [];
 
+kc.changeDeskSize = (rate, camera, t = 1080, b = -1080, l = -750, r = 750) => {
+    camera.orthoTop = rate * t;
+    camera.orthoBottom = rate * b;
+    camera.orthoLeft = rate * l;
+    camera.orthoRight = rate * r;
+}
 
 var createScene = () => {
     engine = new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true });
@@ -50,11 +56,7 @@ var createScene = () => {
             newScene.activeCamera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
 
             var rate = 0.01;
-            newScene.activeCamera.orthoTop = rate * 1080;
-            newScene.activeCamera.orthoBottom = rate * -1080;
-            newScene.activeCamera.orthoLeft = rate * -750;
-            newScene.activeCamera.orthoRight = rate * 750;
-
+            kc.changeDeskSize(rate, newScene.activeCamera);
 
             kc.babylon.scene = newScene;
             kc.babylon.scene.lights[0].intensity = 2;
@@ -67,12 +69,46 @@ var createScene = () => {
                 }
             };
 
+            var frameRate = 20;
+
+            //Rotation Animation
+            kc.babylon.cardBackAnimation = new BABYLON.Animation("yRot", "rotation.y", frameRate, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+
+            var keyFramesR = [];
+
+            keyFramesR.push({
+                frame: 0,
+                value: 0
+            });
+
+            keyFramesR.push({
+                frame: 10,
+                value: Math.PI
+            });
+
+            kc.babylon.cardBackAnimation.setKeys(keyFramesR);
+
+            kc.babylon.cardFrontAnimation = new BABYLON.Animation("yRot", "rotation.y", frameRate, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
+
+            var keyFramesR = [];
+
+            keyFramesR.push({
+                frame: 0,
+                value: Math.PI
+            });
+
+            keyFramesR.push({
+                frame: 10,
+                value: 0
+            });
+
+            kc.babylon.cardFrontAnimation.setKeys(keyFramesR);
+
             // Once the scene is loaded, just register a render loop to render it
             engine.runRenderLoop(function () {
                 newScene.render();
             });
             kc.fitBabylon();
-            kc.setupGame(4, 3);
         });
     }, function (progress) {
         // To do: give progress feedback to user
@@ -98,9 +134,12 @@ kc.stageXY = (rows = 4, interval = 2.2, offset = 0) => {
         arr.push(((i - shift) * interval) + bias + offset);
     return arr;
 }
+kc.babylon.players = [{ name: 'usr', maxClick: 2, wins: 0, point: 0 }, { name: 'char1', maxClick: 2, wins: 0, point: 0 }];
 kc.setupGame = (rows, cols) => {
     kc.babylon.players.forEach(x => x.point = 0);
-    
+    kc.babylon.currentPlayer = kc.babylon.players.findIndex(x => x.name == "usr");
+    console.log(kc.babylon.currentPlayer);
+    kc.babylon.canClick = true;
 
     var num = rows * cols;
     if (num % 2 != 0) {
@@ -117,7 +156,7 @@ kc.setupGame = (rows, cols) => {
     }
     chars = chars.concat(chars);
     var Xs = kc.stageXY(rows, 2.2);
-    var Ys = kc.stageXY(cols, 3.3, -4);
+    var Ys = kc.stageXY(cols, 3.3, -5);
     for (var x in Xs) {
         for (var y in Ys) {
             kc.addCard(Xs[x], Ys[y], chars.splice(Math.floor(Math.random() * chars.length), 1)[0]);
@@ -133,18 +172,22 @@ kc.cardRotate = (mesh) => {
         target = mesh.parent;
     target.rotate(axis, Math.PI, BABYLON.Space.WORLD);
 }
+
+
 kc.cardBack = (mesh) => {
-    mesh.rotation.y = Math.PI;
+    kc.babylon.scene.beginDirectAnimation(mesh, [kc.babylon.cardBackAnimation], 0, 10, false);
+    // mesh.rotation.y = Math.PI;
 }
 kc.cardFront = (mesh) => {
-    mesh.rotation.y = 0;
+    kc.babylon.scene.beginDirectAnimation(mesh, [kc.babylon.cardFrontAnimation], 0, 10, false);
+    // mesh.rotation.y = 0;
 }
 
 setTimeout(() => createScene(), 3000)
 // Resize
 
 kc.fitBabylon = () => {
-
+    console.log('fit');
     var tyraCanvas = document.querySelector('#tyrano_base');
     var scaleX = tyraCanvas.getBoundingClientRect().width / tyraCanvas.offsetWidth;
 
@@ -160,40 +203,47 @@ kc.fitBabylon = () => {
 }
 
 //yo!
-kc.babylon.canClick = true;
-kc.babylon.maxClick = 2;
-kc.babylon.currentPlayer = 0;
-kc.babylon.players = [{ name: 'usr', maxClick: 2, point: 0 }, { name: 'char1', maxClick: 2, point: 0 }];
+
 kc.dealWithClick = (pickResult) => {
     // console.log(pickResult);
     if (kc.babylon.canClick && !pickResult.pickedMesh.name.includes("f_")) {
         kc.performClick(pickResult.pickedMesh);
+        if (kc.babylon.selectedCards.length >= kc.babylon.players[kc.babylon.currentPlayer].maxClick) {
+            kc.endTurn();
+        }
     }
 }
 kc.performClick = (mesh) => {
     var maxClick = kc.babylon.players[kc.babylon.currentPlayer].maxClick;
-    if (kc.babylon.selectedCards.length < maxClick) {
+    if (kc.babylon.selectedCards.length < maxClick && !kc.babylon.selectedCards.includes(mesh)) {
         kc.cardFront(mesh);
         kc.babylon.selectedCards.push(mesh);
     }
-    if (kc.babylon.selectedCards.length >= maxClick) {
-        kc.endTurn();
-    }
+
 }
 kc.endTurn = () => {
     kc.babylon.canClick = false;
     setTimeout(() => {
         var combo = false;
+        var currentPlayer = kc.babylon.players[kc.babylon.currentPlayer];
         while (kc.babylon.selectedCards.length > 1) {
             var card = kc.babylon.selectedCards.shift();
             var matchedIndex = kc.babylon.selectedCards.findIndex((x) => x.name == card.name);
             if (matchedIndex > -1) {
                 kc.babylon.selectedCards.splice(matchedIndex, 1)[0].dispose();
                 card.dispose();
-                kc.babylon.players[kc.babylon.currentPlayer].point += 1;
-                console.log(kc.babylon.players[kc.babylon.currentPlayer].name + "+1 mumi><!");
+                currentPlayer.point += 1;
+                console.log(currentPlayer.name + "+1 mumi><!");
+                if (kc.babylon.scene.meshes.length > 1) {
+                    if (currentPlayer.name != "usr")
+                        kc.fireEvent(kc.scoreEvents);
+                    else
+                        kc.fireEvent(kc.usrScoreEvents);
+                }
                 combo = true;
             } else {
+                if (currentPlayer.name != "usr")
+                    kc.fireEvent(kc.noScoreEvents);
                 kc.cardBack(card);
             }
         }
@@ -204,6 +254,7 @@ kc.endTurn = () => {
         if (kc.babylon.scene.meshes.length < 1) {
             console.log("game set!");
             console.table(kc.babylon.players);
+            setTimeout(() => kc.endGame(), 1000);
             return;
         }
 
@@ -217,10 +268,25 @@ kc.endTurn = () => {
         if (kc.babylon.players[kc.babylon.currentPlayer].name == "usr")
             kc.babylon.canClick = true;
         else {
-            setTimeout(() => kc.charAction(), 1000);
+            setTimeout(() => kc.charAction(), 1500);
         }
-    }, 500);
+    }, 1500);
 }
+
+kc.endGame = () => {
+    var usr = kc.babylon.players.find(x => x.name == "usr");
+    kc.babylon.players.sort((a, b) => a.point < b.point ? 1 : -1);
+
+    if (kc.babylon.players[0].point == usr.point) {
+        if (kc.babylon.players[0].point == kc.babylon.players[1].point)
+            kc.fireEvent(kc.drawEvents);
+        else {
+            kc.fireEvent(kc.winEvents);
+        }
+    } else
+        kc.fireEvent(kc.loseEvents);
+}
+
 kc.charAction = () => {
     var player = kc.babylon.players[kc.babylon.currentPlayer];
     if (player.name == "usr" || kc.babylon.scene.meshes.length < 1) return;
@@ -237,11 +303,32 @@ kc.charAction = () => {
         }
         else
             kc.performClick(selectableCards[Math.floor(Math.random() * selectableCards.length)]);
-        setTimeout(() => { kc.charAction() }, 1000)
+
+        if (kc.babylon.selectedCards.length >= maxClick)
+            kc.endTurn();
+        else
+            setTimeout(() => { kc.charAction() }, 1500);
     }
 }
 
 // window.addEventListener("resize", () => kc.fitBabylon());
 $(window).resize(() => setTimeout(() => kc.fitBabylon(), 100));
+
+kc.winEvents = [{ name: 'win1', weight: 1 }, { name: 'win2', weight: 1 }, { name: 'win3', weight: 1 }];
+kc.loseEvents = [{ name: 'lose1', weight: 1 }, { name: 'lose2', weight: 1 }, { name: 'lose3', weight: 1 }];
+kc.drawEvents = [{ name: 'draw1', weight: 1 }, { name: 'draw2', weight: 1 }, { name: 'draw3', weight: 1 }];
+kc.fireEvent = (events) => {
+    if (!events)
+        return;
+    var total = events.map(x => x.weight).reduce((a, b) => a + b);
+    var random = Math.ceil(Math.random() * total);
+    var i = 0;
+    while (random > 0) {
+        random -= events[i].weight;
+        if (random <= 0)
+            TYRANO.kag.rider.cutTyranoScript(`[jump storage=online.ks target=*${events[i].name}]`);
+        i++;
+    }
+}
 
 [endscript]

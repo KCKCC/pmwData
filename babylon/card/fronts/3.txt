@@ -1,0 +1,36 @@
+ Volume in drive C is OS
+ Volume Serial Number is A2A6-7F34
+
+ Directory of C:\Users\KC\Desktop\babylon\card\fronts
+
+11/24/2019  10:52 PM    <DIR>          .
+11/24/2019  10:52 PM    <DIR>          ..
+11/24/2019  10:52 PM                 0 3.txt
+11/24/2019  07:04 PM            21,922 anko.png
+11/24/2019  07:09 PM            18,062 aoi.png
+11/24/2019  07:01 PM            17,356 asuchu.png
+11/24/2019  07:08 PM            19,690 asuha.png
+11/24/2019  07:10 PM            17,777 avna.png
+11/24/2019  06:53 PM            35,351 cardfront.pdn
+11/24/2019  07:07 PM            19,925 haruka.png
+11/24/2019  07:05 PM            20,739 hinata.png
+11/24/2019  07:02 PM            17,217 huuran.png
+11/24/2019  07:00 PM            17,463 ituki.png
+11/24/2019  07:04 PM            20,723 kaede.png
+11/24/2019  07:10 PM            17,889 kanon.png
+11/24/2019  07:07 PM            19,738 kokomi.png
+11/24/2019  07:07 PM            19,830 kurumi.png
+11/24/2019  07:02 PM            17,077 mari.png
+11/24/2019  07:05 PM            20,363 miki.png
+11/24/2019  07:09 PM            18,016 misaki.png
+11/24/2019  07:04 PM            20,810 mumi.png
+11/24/2019  07:05 PM            20,473 nozomi.png
+11/24/2019  07:06 PM            20,281 renge.png
+11/24/2019  07:09 PM            17,783 sadone.png
+11/24/2019  07:07 PM            19,914 sakura.png
+11/24/2019  07:01 PM            17,547 siho.png
+11/24/2019  07:09 PM            18,911 subaru.png
+11/24/2019  07:03 PM            21,803 urara.png
+11/24/2019  07:08 PM            19,537 yuri.png
+              27 File(s)        516,197 bytes
+               2 Dir(s)  46,456,741,888 bytes free
