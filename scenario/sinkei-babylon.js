@@ -1,5 +1,7 @@
 [iscript]
-var babylonPath = "https://raw.githubusercontent.com/KCKCC/pmwData/master/babylon";
+// var babylonPath = "C:/Users/KC/Desktop/babylon";
+// var babylonPath = "https://raw.githubusercontent.com/KCKCC/pmwData/master/babylon";
+var babylonPath = "./babylon";
 kc.babylon = {};
 kc.appendExtraJS = (url) => {
     var s = document.createElement("script");
