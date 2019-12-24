@@ -107,6 +107,7 @@ kc.addCard = (x, y, chara) => {
     BABYLON.SceneLoader.ImportMesh(["cardBack"], babylonPath + "/card/", "card.babylon", kc.babylon.scene, function (meshes, particleSystems, skeletons) {
         meshes[0].name = chara;
         meshes[1].name = "f_" + chara;
+        meshes[0].material.albedoTexture = new BABYLON.Texture(babylonPath + "/card/duel.png", kc.babylon.scene);
         meshes[1].material.albedoTexture = new BABYLON.Texture(babylonPath + "/card/fronts/" + chara + ".png", kc.babylon.scene);
         meshes[0].position = new BABYLON.Vector3(-x, y, 0);
         kc.cardBack(meshes[0]);
