@@ -50,3 +50,5 @@ C:/XXX/xxx/mumi/whatever~~
 not work now  
 go https://gitlab.com/KCKCC/perfectmumiworld
 download whole project and run it locally to use local files
+
+PPS: ii mono?! https://forum.gamer.com.tw/C.php?bsn=27637&snA=9957&tnum=9
