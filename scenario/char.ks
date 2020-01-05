@@ -10,16 +10,16 @@
 
 ;preload assets
 ;sound
-[kc_addSound name="con"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/2020_01_05_19_06_26_864.mp3"]
-[kc_addSound name="fbi"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/2020_01_05_18_54_01_451.mp3"]
-[kc_addSound name="nade"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/se_care_002.mp3"]
-[kc_addSound name="hehe"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sado_hehe.mp3"]
-[kc_addSound name="c1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/1.mp3"]
-[kc_addSound name="c2"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/2.mp3"]
-[kc_addSound name="c3"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/3.mp3"]
-[kc_addSound name="c41"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/41.mp3"]
-[kc_addSound name="c42"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/42.mp3"]
-[kc_addSound name="c5"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/sound/sadTheImoto/5.mp3"]
+[kc_addSound name="con"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/2020_01_05_19_06_26_864.mp3"]
+[kc_addSound name="fbi"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/2020_01_05_18_54_01_451.mp3"]
+[kc_addSound name="nade"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/se_care_002.mp3"]
+[kc_addSound name="hehe"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sado_hehe.mp3"]
+[kc_addSound name="c1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/1.mp3"]
+[kc_addSound name="c2"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/2.mp3"]
+[kc_addSound name="c3"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/3.mp3"]
+[kc_addSound name="c41"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/41.mp3"]
+[kc_addSound name="c42"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/42.mp3"]
+[kc_addSound name="c5"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/5.mp3"]
 
 ;pic
 [kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
