@@ -14,12 +14,13 @@
 [kc_addSound name="fbi"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/2020_01_05_18_54_01_451.mp3"]
 [kc_addSound name="nade"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/se_care_002.mp3"]
 [kc_addSound name="hehe"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sado_hehe.mp3"]
-[kc_addSound name="c1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/1.mp3"]
-[kc_addSound name="c2"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/2.mp3"]
-[kc_addSound name="c3"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/3.mp3"]
-[kc_addSound name="c41"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/41.mp3"]
+[kc_addSound name="c1"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/s1.mp3"]
+[kc_addSound name="c2"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/s2.mp3"]
+[kc_addSound name="c3"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/s3.mp3"]
+[kc_addSound name="c41"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/s41.mp3"]
 [kc_addSound name="c42"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/42.mp3"]
-[kc_addSound name="c5"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/5.mp3"]
+[kc_addSound name="c5"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/s5.mp3"]
+[kc_addSound name="nyu"  url="https://raw.githubusercontent.com/KCKCC/pmwData/master/sound/sadTheImoto/unyu.mp3"]
 
 ;pic
 [kc_addPic name="mumi"    url="data/others/kc/pic/mumi.png"]
@@ -51,6 +52,8 @@
 [kc_playSound name="c42" ]
 [kc_hukidasi str="I'm_right_here!_\rWhat_do_you_want?!" type="usr2" txtInterval="20" fontSize=2.3em]
 
+[kc_exp name="sad" expName="sane_f11" ]
+
 [kc_sayit name="sad" sound="c5"]
 [kc_hukidasi str="なでなでして～\rお兄ちゃん～" type="npc1" name="sad" ]
 
@@ -60,13 +63,12 @@
         up:()=>{if(!ended)TYRANO.kag.rider.cutTyranoScript("[jump storage=online.ks target=*nadeUp]")},
         down:()=>{if(!ended)TYRANO.kag.rider.cutTyranoScript("[jump storage=online.ks target=*nadeDown]")},
         move: ()=>  {if(kc.nadeDo>1000 && !ended) {
-                console.log('6');
                 ended=true; 
                 TYRANO.kag.rider.cutTyranoScript("[jump storage=online.ks target=*nadeOwa]");}
             },
         out: ()=>{if(!ended)TYRANO.kag.rider.cutTyranoScript("[jump storage=online.ks target=*nadeOut]");}
     };
-
+    kc.nadeKando=63;
     kc.nadeSet("sad",nadeReaction);
 [endscript]
 [jump storage=online.ks target=*end]
@@ -93,12 +95,21 @@
     kc.nadeClear();
 [endscript]
 [kc_exp name="sad" expName="anko_f10" ]
-[kc_hukidasi str="うにゅううぅぅぅ～ " type="npc1" name="sad" paku=true]
+[kc_sayit name="sad" sound="nyu"]
+[kc_hukidasi str="うにゅううぅぅぅ～ " type="npc1" name="sad" ]
 
 [kc_playSound name="fbi" ]
 [kc_hukidasi str="F.B.I.!!_\rOPEN_UP!! " type="nar" fat=1 fontSize=2em txtInterval="20" endWait=1000]
 
-[kc_hukidasi str="\r\r◀▰To Be Continued▰▰" type="nar" fontSize=2em txtInterval="1" endWait=50000]
+[live2d_hide name = "sad" time=1 ]
+[live2d_opacity name="sad" opacity=1 time=2]
+
+[iscript]
+    $("#tywrap").css('filter', 'sepia(1)');
+[endscript]
+
+
+[kc_hukidasi str="\r\r◀▰To Be Continued▰▰" type="nar" fontSize=2em txtInterval="1" endWait=50000 x=30 y=92]
 
 *end
 
