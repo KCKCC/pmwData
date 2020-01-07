@@ -2,6 +2,7 @@
 data for perfectmumi world demo  
 may be deleted any time  
 
+https://kckcc.gitlab.io/perfectmumiworld/
 paste the content of ks files in scenario folder at scenario tab then click run.
 
 output should look like:
