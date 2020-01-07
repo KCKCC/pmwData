@@ -49,7 +49,7 @@ you can create a short cut of chrome with path like :
 ~~and use this to open perfectmumiworld to get the ability to load local resources like:  
 C:/XXX/xxx/mumi/whatever~~  
 not work now  
-go https://gitlab.com/KCKCC/perfectmumiworld
+go http://bit.ly/35ABD1T
 download whole project and run it locally to use local files
 
 PPS: ii mono?! https://forum.gamer.com.tw/C.php?bsn=27637&snA=9957&tnum=9
