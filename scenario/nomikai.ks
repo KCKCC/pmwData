@@ -1,12 +1,14 @@
-[kc_prepareL2D name="botan"   url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\botan\" modelFileName="m.json" ]
-[kc_prepareL2D name="kiku"    url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\kiku\" modelFileName="m.json" ]
-[kc_prepareL2D name="asuchu1" url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\asuchu\op_02\" modelFileName="m.json" ]
-[kc_prepareL2D name="asuchu2" url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\asuchu\swm_02\" modelFileName="m.json" ]
-[kc_prepareL2D name="asuchu3" url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\asuchu\yuka_01\" modelFileName="m.json" ]
-[kc_prepareL2D name="mari"    url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\mari\yuka_01\" modelFileName="m.json" ]
-[kc_prepareL2D name="ituki"   url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\ituki\swm_10\" modelFileName="m.json" ]
-[kc_prepareL2D name="huran1"  url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\huran\u_09\" modelFileName="m.json" ]
-[kc_prepareL2D name="huran2"  url="C:\Users\KC\Desktop\R\pmwData\pwmData/models\huran\usagi_01\" modelFileName="m.json" ]
+[kc_loadAllExp ]
+
+[kc_prepareL2D name="botan"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\botan\" modelFileName="m.json" ]
+[kc_prepareL2D name="kiku"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\kiku\" modelFileName="m.json" ]
+[kc_prepareL2D name="asuchu1" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\asuchu\op_02\" modelFileName="m.json" ]
+[kc_prepareL2D name="asuchu2" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\asuchu\swm_02\" modelFileName="m.json" ]
+[kc_prepareL2D name="asuchu3" url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\asuchu\yuka_01\" modelFileName="m.json" ]
+[kc_prepareL2D name="mari"    url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\mari\yuka_01\" modelFileName="m.json" ]
+[kc_prepareL2D name="ituki"   url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\ituki\swm_10\" modelFileName="m.json" ]
+[kc_prepareL2D name="huran1"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\huran\u_09\" modelFileName="m.json" ]
+[kc_prepareL2D name="huran2"  url="C:/Users/KC/Desktop/R/pmwData/pwmData/models\huran\usagi_01\" modelFileName="m.json" ]
 
 [live2d_new name="botan"   width=1024 height=1024 left=75% top=60% gltop=0  lip=true glscale=1.85 ]
 [live2d_new name="kiku"    width=1024 height=1024 left=25% top=60% gltop=0  lip=true glscale=1.85 ]
@@ -49,12 +51,14 @@
 
 [kc_hukidasi str="老師家附近的神樹\r峰里民中秋聯歡晚\r會會場" type="nar" ]
 
+;[jump storage=online.ks target=*test]
+
 [live2d_show name="ituki" time=1000]
 [live2d_show name="huran1" time=1000]
-[live2d_expression name = "ituki"   filenm="f03.exp.json" ]
+[kc_exp name = "ituki"   expName="tuki_f03" ]
 [wait time=500]
 [kc_setPart name="ituki" partName="PARTS_01_GLASSES_001" val=0]
-[live2d_expression name = "huran1"   filenm="f02.exp.json" ]
+[kc_exp name = "huran1"   expName="hura_f02" ]
 [kc_L2DsetParam name="huran1" paramName="PARAM_CHEEK" value=3]
 [live2d_motion name = "ituki" filenm="m05.mtn" ]
 [kc_playSound name="ituki_haha" vol=0.7]
@@ -71,7 +75,7 @@
 
 [live2d_hide name = "huran1" time=1000 ]
 [live2d_show name="huran2" time=1000]
-[live2d_expression name = "huran2"   filenm="f02.exp.json" ]
+[kc_exp name = "huran2"   expName="hura_f02" ]
 [wait time=600]
 [kc_L2DsetParam name="huran2" paramName="PARAM_CHEEK" value=2]
 [wait time=600]
@@ -90,24 +94,24 @@
 [kc_hukidasi str="快樂3000倍的\r孜然粉，真是太\r可怕了...." type="usr3" ]
 
 [live2d_show name="asuchu1" time=1000]
-[live2d_expression name = "asuchu1"   filenm="f08.exp.json" ]
+[kc_exp name = "asuchu1"   expName="achu_f08" ]
 [wait time=1000]]
 
 [kc_hukidasi str="明日葉....\r妳..沒事吧...?" type="usr1" ]
 [kc_hukidasi str="啊,是的。\r只是也照到御劍老師\r的變年輕光束了.." type="npc1" name="asuchu1" paku=true ]
 [kc_hukidasi str="不過....\r小時候的明日葉....\r真可愛呢!" type="usr1" ]
-[live2d_expression name = "asuchu1"   filenm="f04.exp.json" ]
+[kc_exp name = "asuchu1"   expName="achu_f04" ]
 [wait time=1000]]
 [kc_hukidasi str="!!...老師!!\r請不要開玩笑了!!" type="npc2" name="asuchu1" paku=true ]
 
 [live2d_show name="mari" time=1000]
-[live2d_expression name = "mari"   filenm="f03.exp.json" ]
+[kc_exp name = "mari"   expName="mari_f03" ]
 
 [wait time=1000]
 [live2d_show name="asuchu2" time=0]
 [live2d_show name="asuchu3" time=0]
-[live2d_expression name = "asuchu2"   filenm="f04.exp.json" ]
-[live2d_expression name = "asuchu3"   filenm="f04.exp.json" ]
+[kc_exp name = "asuchu2"   expName="achu_f04" ]
+[kc_exp name = "asuchu3"   expName="achu_f04" ]
 
 [iscript]
     $("#Live2D_asuchu2").css('transition-duration','1000ms')
@@ -172,16 +176,19 @@
 
 [live2d_hide name = "mari" time=50 ]
 
+;*test
 
 [live2d_show name="botan" time=1000]
 [live2d_show name="kiku" time=1000]
-[live2d_expression name = "botan"   filenm="f02.exp.json" ]
-[live2d_expression name = "kiku"   filenm="f02.exp.json" ]
-[wait time=600]
+[kc_exp name = "botan"   expName="bota_f02" ]
 [kc_L2DsetParam name="botan" paramName="PARAM_CHEEK" value=2]
-[wait time=100]
+[kc_exp name = "kiku"   expName="bota_f02" ]
 [kc_L2DsetParam name="kiku" paramName="PARAM_CHEEK" value=2]
+
 [wait time=600]
+
+;[jump storage=online.ks target=*end]
+
 [kc_hukidasi str="喂喂~\r那邊的小哥\r在拍了嘛~~?!" type="npc1" name="botan" paku=true ]
 [kc_hukidasi str="在拍了嘛~~\r在拍了嘛~~\r哈哈?" type="npc1" name="kiku" paku=true ]
 [kc_hukidasi str="理事長...!\r是的是的\r已經在拍了!!" type="usr1" ]
@@ -253,3 +260,5 @@
 ;guofunbu
 [kc_showPic name="mumi" style="transition: opacity .5s; background-color:white;height:100%;"  isBg="true"]
 [wait time=1000]
+
+*end

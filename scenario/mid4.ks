@@ -70,7 +70,7 @@
 [kc_hidePic name="mumi" isBg="true"]
 [wait time=500]
 
-
+@jump target=*test
 
 
 [kc_hukidasi str="老師家附近的\r千導院私人海灘" type="nar"]
@@ -207,6 +207,7 @@
 [kc_hukidasi str="星月式快速劍\r_____星月式快速劍\r__星月式快速劍" type="npc1"  name="miki" paku=true]
 [kc_hukidasi str="哦哦哦! \r柚子在跳舞!" type="usr2" ]
 
+*test
 [live2d_show name="hinata" time=1000]
 [live2d_expression name = "hinata" filenm="f02.exp.json" ]
 
@@ -223,7 +224,6 @@
 [live2d_expression name = "hinata" filenm="f06.exp.json" ]
 [wait time=600]
 [kc_L2DsetParam name="hinata" paramName="PARAM_MOUTH_FORM" value=3]
-[live2d_expression name = "hinata" filenm="mumi" ]
 [wait time=600]
 [kc_hukidasi str="日向手刀!" type="npc2"  name="hinata" paku=true fontSize="3em"]
 [kc_showPic name="nusun" style="right: 5%;top: 50%;z-index: 100;" isBg="false"]

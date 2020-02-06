@@ -377,12 +377,12 @@ kc.fireEvent = (events) => {
 [iscript]
 kc.babylon.players = [
     { name: 'sadone', maxClick: 2, wins: 0, point: 0,
-      kikendo:0.3,
+      kikendo:0.4,
       scoreEvents : [{ name: 'score0', weight: 3 }, { name: 'score1', weight: 2 }, { name: 'score2', weight: 2 }],
       noScoreEvents : [{ name: 'suka1', weight: 1 }, { name: 'suka2', weight: 1 }, { name: 'suka3', weight: 1 }]
     }, 
     { name: 'kaede', maxClick: 2, wins: 0, point: 0,
-      kikendo:0.4,
+      kikendo:0.5,
       actionEvents : [{ name: 'act1', weight: 3 }, { name: 'act2', weight: 2 }, { name: 'act3', weight: 2 }, { name: 'act4', weight: 2 }],
       scoreEvents : [{ name: 'kscore0', weight: 3 }, { name: 'kscore1', weight: 2 }, { name: 'kscore2', weight: 2 }, { name: 'kscore3', weight: 2 }],
       noScoreEvents : [{ name: 'ksuka1', weight: 1 }, { name: 'ksuka2', weight: 1 }, { name: 'ksuka3', weight: 1 }, { name: 'ksuka4', weight: 1 }, { name: 'ksuka5', weight: 1 }, { name: 'ksuka6', weight: 1 }, { name: 'ksuka7', weight: 1 }, { name: 'ksuka8', weight: 1 }]

@@ -42,3 +42,5 @@
 [wait time=5000]
 ;做動作LOOP
 [live2d_motion name = "sad" filenm="m02.mtn" idle="ON" ]
+
+[kc_setPart name="sad" partName="PARTS_01_EXTENSION_XMAS_02" val=0]
