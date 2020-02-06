@@ -74,8 +74,8 @@
   },
   "expressions": [
     {
-      "name": "F01.exp.json",
-      "file": "expressions/F01.exp.json"
+      "name": "f01.exp.json",
+      "file": "expressions/f01.exp.json"
     }
   ],
   "physics": "physics.json",
